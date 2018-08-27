@@ -1,0 +1,31 @@
+<!--<p class="name">
+  Enter your name :  <input #nameTag type="text" [(ngModel)]="name" (keyup)="onKey($event)" placeholder="Enter name">
+</p>
+<p>
+  Form content {{(getName())}}
+</p><br>
+<p>
+  {{getValue() | uppercase}}
+</p>
+<button class="btn" (click) = "onClick(nameTag.value, $event)" button-size="100">Click here</button>
+<p>{{msg}}</p>
+<button (click) = "onClick1()">Image Button</button>
+<p><img [src]="image"></p>
+
+<div *ngIf="showName">
+  <img [src]="source">
+</div>
+<div *ngIf="!showName">
+  Salary is : {{salary}}
+</div><span>{{i}}</span>
+ (click)="selectStudent(i)"
+<input type="button" (click)="switchViews()" value="Switch views">-->
+<div *ngFor="let student of students">
+  <span>Name : {{student.name}}</span>
+  <span>id : {{student.id}}</span>
+</div>
+
+<div>
+  <span>{{selectedStudentName}}</span>
+  <span>{{selectedStudentRollno}}</span>
+</div>
